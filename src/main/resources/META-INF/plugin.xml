@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>name.kuznetc.rd-android-extensions</id>
+    <name>RD Android Extensions</name>
+    <vendor email="andrei.kuznetsov@jetbrains.com" url="https://github.com/andrei-kuznetsov/rd-android-extensions">No Company</vendor>
+
+    <description><![CDATA[
+    Adds some android-plugin related actions to the client side in the remotedev
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.jetbrains.codeWithMe</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <rdserver.backend.delegating.actions implementation="org.intellij.android.cwm.AndroidUnattendedBackendDelegatingActionIdsProvider" />
+    </extensions>
+
+</idea-plugin>
