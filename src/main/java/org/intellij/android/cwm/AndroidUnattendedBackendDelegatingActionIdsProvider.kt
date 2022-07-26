@@ -12,7 +12,7 @@ class AndroidUnattendedBackendDelegatingActionIdsProvider : BackendDelegatingAct
 
     init {
         if (!UnattendedHostManager.getInstance().isUnattendedMode) {
-            throw ExtensionNotApplicableException.INSTANCE
+            throw ExtensionNotApplicableException.create()
         }
     }
 
